@@ -25,7 +25,7 @@ def stas():
     dict_ = {}
     classes = [Amenity, City, Place, Review, State, User]
     names = ["amenities", "cities", "places", "reviews", "states", "users"]
-    
+
     for i in range(len(names)):
         dict_[names[i]] = storage.count(classes[i])
 
